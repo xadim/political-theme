@@ -1,0 +1,2624 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+
+ grey
+ 636466
+ 979797
+Blue
+
+56C6F2
+
+
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700);
+
+.interacted:invalid {
+    border: 1px solid red;
+}
+.interacted:valid {
+    border: 1px solid green;
+}
+
+.intro-header {
+    padding-top: -30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    text-align: center;
+    color: #636466;
+    background: url(../img/backgrounds/mary-kate-cary-background.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -99;
+}
+
+.portrait {
+/*    margin-bottom: -70px;*/
+    margin-top: 0;
+    text-align: center;
+    bottom: 0 !important;
+}
+
+
+@media(max-width: 1200px){
+    .portrait{
+        display: none;
+    }
+}
+
+.mobile-portrait {
+    text-align: center;
+    margin-bottom: -80px;
+    margin-top: -70px;
+}
+@media(min-width: 1200px){
+    .mobile-portrait{
+        display: none;
+    }
+}
+
+.mayko-air{
+    padding: 40px 0;
+}
+
+.multimedia{
+    text-align: center;
+    padding: 99px 0 70px;
+}
+
+@media (max-width: 768px){
+    .multimedia{
+        text-align: center;
+        padding: 50px 0 40px;
+    }
+    .multimedia a div{
+        width: 100%;
+        margin: 19px auto;
+    }
+    .media img{
+        margin: 19px 0 12px;
+    }
+}
+
+.multimedia h2.section-heading{
+    margin-top: -7px;
+    text-transform: uppercase;
+}
+
+.multimedia img {
+  /*to get the greyscale work on Firefox we need the following ulr line not -moz-filter*/
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); 
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -ms-filter:     grayscale(100%);
+  -o-filter:      grayscale(100%);
+}
+
+.multimedia img:hover {
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter:    none;
+  -ms-filter:     none;
+  -o-filter:      none;
+}
+.audio{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.audio h2{
+    font-size: 24px;
+    font-family:'Vollkorn', serif;
+    margin-bottom: 40px; 
+    line-height: 40px;
+}
+
+.audio p{
+    font-size: 16px;
+    margin: 28px 0;
+    color: #636466;
+    line-height: 1.4;
+}
+
+.audio p a{ 
+    color: #636466;
+    text-decoration: underline;
+}
+
+.audio p a:hover{
+    color: #56C6F2;
+    text-decoration: none;
+}
+
+.audio h2 img{
+    margin-top: -4px
+}
+
+.whitep span{
+    font-style: italic;
+}
+
+.grayp{
+    margin: -28px 0 0;
+    font-size: 16px;
+}
+
+audio {
+    width: 460px;
+    border-radius: 4px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #C2C2C2), color-stop(0.5, #C2C2C2), color-stop(0.51, #222), color-stop(1, #222));
+    background: -moz-linear-gradient(center top , #C2C2C2 0%, #C2C2C2 50%, #444 51%, #444 100%) repeat scroll 0% 0% #404040;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 12px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px){
+    audio{
+        width: 270px;
+    }
+}
+#playlist,audio{}
+
+#playlist{
+    margin: 40px 0;
+}
+
+#playlist li a div{
+    color:#636466;
+    padding:5px;
+    font-size: 16px;
+    line-height:1;
+    float: left;
+    width: 70%;
+    top: 0;
+    text-align: left;
+}
+
+#playlist .active a div,
+#playlist a:hover div{
+    color: #56C6F2;
+    text-decoration:none;
+}
+
+ul#playlist li.active a img,
+ul#playlist li a:hover img{
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter:    none;
+  -ms-filter:     none;
+  -o-filter:      none;
+   background-color: #56C6F2;
+}
+
+#playlist li a img{
+  float: left;
+  width: 16%;
+  text-align: left;
+}
+
+#playlist li a img.img-audio{
+    width: 35px;
+    height: 29px;
+}
+
+@media (max-width: 768px){
+    #playlist{
+    padding: 0;
+    }
+    #playlist li{
+        float: left;
+        padding: 0;
+    }
+    #playlist li a div{
+        margin: 12px 0;
+    }
+    #playlist li a img{
+        margin: 12px 0;
+    }
+}
+
+.articles{
+    text-align: center;
+    padding: 0 0 50px;
+}
+
+.articles h2{
+    font-size: 24px;
+    font-family:'Vollkorn', serif;
+    margin: 40px; 
+}
+
+.articles h2 img{
+    margin-top: -7px;
+}
+
+.articles p{
+    font-size: 16px;
+    margin:  40px 0 19px;
+    color: #636466;
+}
+
+.articles p a{
+    color: #56C6F2;
+    text-decoration: underline;
+}
+
+.articles p a:hover{
+    color: #56C6F2;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    .articles{
+    padding: 0;
+    }
+    .articles h2{
+        margin: 20px; 
+    }
+}
+.entry-header h1{
+    display: none;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 22%;
+    padding-bottom: 70px;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 80%;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:768px) {
+    .intro-message {
+        padding-top: 19px;
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+        margin-right: auto;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+blockquote{
+    border: none;
+}
+.testimonial { 
+    margin: 0 0 19px 0;
+    padding: 10px 50px;     
+    position: relative;     
+    font-family: Georgia, serif;     
+    color: #fff;          
+    font-style: italic;   
+    font-size: 24px;  
+} 
+.testimonial:before, .testimonial:after {
+    content: "\201C";     
+    position: absolute;     
+    font-size: 80px;     
+    line-height: 1;     
+    font-style: normal; 
+} 
+
+.testimonial:before {     
+    top: 0;     
+    left: 10px; 
+} 
+.testimonial:after {     
+    content: "\201D";     
+    right: 10px;     
+    bottom: -0.5em; 
+}
+
+@media(max-width:768px) {
+    .testimonial{
+        font-size: 19px;
+    }
+}
+
+.appears h3{
+    margin: 66px 0 66px 0;
+    color: white;
+}
+.appears img{
+    margin-bottom: 19px
+}
+
+
+.appears .marge-t{
+    margin-top: -40px;
+}
+
+
+@media(max-width:768px) {
+    .testimonial{
+        font-size: 19px;
+    }
+    .appears a div{
+        text-align: center;
+        width: 100%;
+        margin: 7px auto;
+    }
+}
+
+.bio_front{
+  margin: 20px auto;
+  z-index: 99999
+}
+
+.bio_front p{
+  font-size: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Vollkorn', serif;
+}
+
+.bio_front p a{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.bio_front p a:hover{
+  color: #56C6F2;
+  text-decoration: underline;
+}
+
+.bio_page .inner {
+    width: 90%;
+    max-width: 1170px;
+    margin: 40px auto 0;
+    position: relative;
+    min-height: 50px;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    z-index: 99;
+}
+
+.bio_page .espace{
+  height: 140px;
+  width: 100%;
+}
+.bio_page .pro-portrait {
+    margin-bottom: 0px;
+    margin-top: 0;
+    text-align: center;
+    bottom: 0 !important;
+}
+
+@media(max-width: 1200px){
+    .bio_page .pro-portrait{
+        display: none;
+    }
+}
+
+.bio_page .mobile-portrait {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: -70px;
+}
+@media(min-width: 1200px){
+    .bio_page .mobile-portrait{
+        display: none;
+    }
+}
+
+.bio_page h2{
+    font-family: 'Vollkorn', serif;
+    font-size: 28px;
+    letter-spacing: 5px;
+    color: #636466;
+    line-height: 1em;
+    text-transform: uppercase;
+    padding: 0 !important;
+    margin-top: 0;
+}
+
+.bio_page p{
+    font-size: 16px;
+    color: #636466;
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #F2F3F4;
+    color: #636466;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    color: #636466;
+    background-color: #E5E5E5;
+}
+
+@media (max-width: 768px){
+    .content-section-a {
+        padding: 0;
+    }
+   .content-section-b {
+        padding: 0;
+    }    
+}
+h2.section-heading {
+    margin-bottom: 30px;
+    font-size:30px;
+    overflow: hidden;
+    font-family: 'Vollkorn', serif;
+    padding-left: 0;
+    color: #636466;
+}
+
+h2.section-head_title {
+    margin-bottom: 30px;
+    font-size:30px;
+    letter-spacing: .2em;
+    overflow: hidden;
+    font-family: 'Vollkorn', serif;
+    padding-left: 0;
+    color: #636466;
+}
+
+h2.section-head_white {
+    margin-bottom: 30px;
+    font-size:30px;
+    letter-spacing: .2em;
+    overflow: hidden;
+    font-family: 'Vollkorn', serif;
+    padding-left: 0;
+    color: #fff;
+}
+
+.own-copy {
+    margin-bottom: 19px;
+    font-size:28px;
+    font-family: 'Vollkorn', serif;
+    color: #636466;
+}
+.purchase{
+    margin-bottom: 19px;
+    font-size:16px;
+    font-weight: 800;
+    color: #636466;
+}
+p .lead a:active{
+    text-decoration: underline;
+}
+
+.leads{
+    font-size: 15px;
+    color: #636466;
+}
+
+.leads a:hover {
+  color: #56C6F2;
+  text-decoration: none;
+}
+
+.leads a {
+  color: #636466;
+}
+
+
+.paragraph{
+
+}
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+.banner {
+    padding: 28px 0 15px 0;
+    color: #f8f8f8;
+    text-align: right;
+    color: #636466;
+}
+
+.banner h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #636466;
+}
+
+.banner ul {
+    margin: 7px 0 0;
+}
+
+.banner ul li {
+    margin-right: 19px;
+}
+
+.banner-social-buttons {
+    float: left;
+    margin-top: 0;
+}
+
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: none;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:1200px) {
+    .banner {
+    text-align: center;
+    }
+    .banner-social-buttons {
+        float: left;
+        margin-left: 40%;
+        text-align: center;
+    }  
+}
+
+@media(max-width:768px) {
+    .banner {
+    text-align: center;
+    }
+    .banner-social-buttons {
+        text-align: center;
+    }  
+}
+
+iframe{
+    
+}
+
+.one-edge-shadow {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+}
+
+.separator {
+    height: 76px;
+    text-align: center;
+    color: #f8f8f8;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    z-index: -99;
+}
+
+.scroll-down{
+    position:absolute;
+    z-index: 99999;
+    margin-top: -66px;
+    bottom:114px;
+    left:50%;
+    margin-left:-19px;
+    -webkit-animation:onoff 2.5s linear infinite;
+    cursor:pointer;
+    font-family:fontello,serif;
+    font-size:2em;
+    color:#FFF;
+    z-index:100
+}
+
+
+.ic_scroll_down{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/mary-kate-arrow.svg) 50% 50% / 45px 31px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/mary-kate-arrow.svg) 50% 50% / 45px 31px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/mary-kate-arrow.svg) 50% 50% / 45px 31px no-repeat;
+  background-color: #fff;
+  height: 31px;
+  width: 45px;
+  float: left;
+  margin-left: 1px;
+}
+
+
+.ic_scroll_down:hover {
+  background-color: #56C6F2;
+    -moz-transition: fill 300ms ease-in;
+    -webkit-transition: fill 300ms ease-in;
+    transition: fill 300ms ease-in;
+}
+
+
+
+
+@-moz-document url-prefix() {
+  /*svg css for firefox*/
+    .ic_scroll_down{
+    background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/mary-kate-arrow.svg) 50% 50% / 45px 31px no-repeat;
+    -webkit-filter: grayscale(100%) brightness(5);
+    filter: grayscale(100%) brightness(5);
+  }
+}
+
+
+.scroll-down:before{
+    width: 0;
+    height: 0;
+}
+
+@media (max-width: 768px){
+    .scroll-down{
+        bottom: 19px;
+    }
+    .separator {
+    height: 46px;
+    }   
+}
+
+.scroll-down{
+     animation: bounce 0.7s ease infinite;
+}
+
+.animate {
+    -webkit-animation-name: squash;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-delay: 0;
+    -webkit-animation-timing-function: ease-out;
+
+    animation-name: squash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0;
+    timing-function: ease-out;
+}
+
+@-webkit-keyframes squash {
+    from { height: 66px; }
+    to  { height: 50px; }
+}
+
+/*start media icons*/
+.ic_cnn{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/cnn.svg) 50% 50% no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/cnn.svg) 50% 50%  no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/cnn.svg) 50% 50% no-repeat;
+  background-color: #fff;
+  height: 46px;
+  width: 99px;
+}
+
+.ic_fox-news{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/fox-news.svg) 50% 50% no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/fox-news.svg) 50% 50% no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/fox-news.svg) 50% 50% no-repeat;
+  background-color: #fff;
+  height: 83px;
+  width: 92px;
+}
+
+.ic_c-span{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/c-span.svg) 50% 50% no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/c-span.svg) 50% 50% no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/c-span.svg) 50% 50% no-repeat;
+  background-color: #fff;
+  height: 37px;
+  width: 145px;
+}
+
+.ic_us-news{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/us-news.svg) 50% 50%  no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/us-news.svg) 50% 50% no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/us-news.svg) 50% 50% no-repeat;
+  background-color: #fff;
+  height: 34px;
+  width: 137px;
+}
+
+.ic_abc-news{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/abc-news.svg) 50% 50% no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/abc-news.svg) 50% 50% no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/abc-news.svg) 50% 50% no-repeat;
+  background-color: #fff;
+  height: 51px;
+  width: 155px;
+}
+
+.ic_npr{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/npr.svg) 50% 50% no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/npr.svg) 50% 50% no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/npr.svg) 50% 50% no-repeat;
+  background-color: #fff;
+  height: 41px;
+  width: 117px;
+}
+
+.ic_envision{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/envision.svg) 50% 50% no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/envision.svg) 50% 50% no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/envision.svg) 50% 50% no-repeat;
+  background-color: #fff;
+  height: 35px;
+  width: 168px;
+}
+
+.ic_real-clear-politics{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/real-clear-politics.svg) 50% 50% no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/real-clear-politics.svg) 50% 50% no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/real-clear-politics.svg) 50% 50% no-repeat;
+  background-color: #fff;
+  height: 67px;
+  width: 109px;
+}
+
+.ic_video{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-video.svg) 50% 50% / 49px 45px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-video.svg) 50% 50% / 49px 45px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-video.svg) 50% 50% / 49px 45px no-repeat;
+  background-color: #B1B1B1;
+  height: 45px;
+  width: 49px;
+  margin: 0 auto;
+}
+
+.ic_audio{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-audio.svg) 50% 50% / 50px 41px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-audio.svg) 50% 50% / 50px 41px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-audio.svg) 50% 50% / 50px 41px no-repeat;
+  background-color: #B1B1B1;
+  height: 41px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.ic_article{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-article.svg) 50% 50% / 41px 53px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-article.svg) 50% 50% / 41px 53px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-article.svg) 50% 50% / 41px 53px no-repeat;
+  background-color: #B1B1B1;
+  height: 53px;
+  width: 41px;
+  margin: 0 auto;
+}
+
+.ic_article_small{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-article.svg) 50% 50% / 29px 37px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-article.svg) 50% 50% / 29px 37px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-article.svg) 50% 50% / 29px 37px no-repeat;
+  background-color: #636466;
+  height: 37px;
+  width: 29px;
+  margin: 0 auto;
+}
+
+.ic_audio_small{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-audio.svg) 50% 50% / 35px 29px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-audio.svg) 50% 50% / 35px 29px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-audio.svg) 50% 50% / 35px 29px no-repeat;
+  background-color: #636466;
+  height: 29px;
+  width: 35px;
+  margin: 0 auto;
+}
+.ic_npr_small{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/npr.svg) 50% 50% / 82px 29px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/npr.svg) 50% 50% / 82px 29px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/npr.svg) 50% 50% / 82px 29px no-repeat;
+  background-color: #636466;
+  height: 29px;
+  width: 82px;
+  margin: 0 auto;
+}
+
+.ic_us-news_small{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/us-news.svg) 50% 50% / 99px 70px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/us-news.svg) 50% 50% / 99px 70px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/us-news.svg) 50% 50% / 99px 70px no-repeat;
+  background-color: #636466;
+  height: 70px;
+  width: 99px;
+  margin: 0 auto;
+}
+
+.ic_real-clear-politics-small{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/real-clear-politics.svg) 50% 50% / 100px 50px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/real-clear-politics.svg) 50% 50% / 100px 50px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/real-clear-politics.svg) 50% 50% / 100px 50px no-repeat;
+  background-color: #636466;
+  height: 60px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+
+
+@-moz-document url-prefix() {
+  /*svg css for firefox*/
+    
+    .ic_cnn{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/cnn.svg) 50% 50% no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(5);
+    }
+
+    .ic_fox-news{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/fox-news.svg) 50% 50% no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(5);
+    }
+
+    .ic_c-span{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/c-span.svg) 50% 50% no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(5);
+    }
+
+    .ic_us-news{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/us-news.svg) 50% 50%  no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(5);
+    }
+
+    .ic_abc-news{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/abc-news.svg) 50% 50% no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(5);
+    }
+
+    .ic_npr{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/npr.svg) 50% 50% no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(5);
+    }
+
+    .ic_envision{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/envision.svg) 50% 50% no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(5);
+    }
+
+    .ic_real-clear-politics{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/real-clear-politics.svg) 50% 50% no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(5);
+    }
+
+    .ic_video{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-video.svg) 50% 50% / 49px 45px no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+    }
+
+    .ic_audio{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-audio.svg) 50% 50% / 50px 41px no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+    }
+
+    .ic_article{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-article.svg) 50% 50% / 41px 53px no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+    }
+
+    .ic_article_small{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-article.svg) 50% 50% / 29px 37px no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+    }
+
+    .ic_audio_small{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-audio.svg) 50% 50% / 35px 29px no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+    }
+    .ic_npr_small{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/npr.svg) 50% 50% / 82px 29px no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+    }
+
+    .ic_us-news_small{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/us-news.svg) 50% 50% / 136px 33px no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+    }
+
+    .ic_real-clear-politics-small{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/real-clear-politics.svg) 50% 50% / 133px 70px no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+    }
+
+
+    .ic_npr:hover, .ic_real-clear-politics:hover, .ic_abc-news:hover, .ic_fox-news:hover, .ic_envision:hover, .ic_cnn:hover, 
+    .ic_abc-news:hover, .ic_c-span:hover, .ic_us-news:hover{
+        background-color: transparent !important;
+        -webkit-filter: grayscale(0%) brightness(0);
+        filter: grayscale(0%) brightness(3.2);
+    }
+
+    .ic_video:hover, .ic_audio:hover, .ic_article:hover{
+        background-color: transparent !important;
+        -webkit-filter: grayscale(0%) brightness(0);
+        filter: grayscale(0%) brightness(3.2);
+    }
+
+    ul#playlist li.active a img,
+    ul#playlist li a:hover img{
+        background-color: transparent !important;
+        -webkit-filter: grayscale(0%) brightness(0);
+        filter: grayscale(0%) brightness(3.2);
+    }
+
+    img[alt="Political speechwriter online audio files"]{
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      font-size: 0 !important;
+    }
+
+    img.ic_npr_small[alt="Female speechwritter"] {
+      width: 84px;
+      height: 40px;
+      display: inline-block;
+      font-size: 0 !important;
+    }
+
+     img.ic_us-news_small[alt="Female speechwritter"] {
+      width: 136px;
+      height: 33px;
+      display: inline-block;
+      font-size: 0 !important;
+    }
+
+    img.ic_real-clear-politics-small[alt="Female speechwritter"] {
+      width: 136px;
+      height: 70px;
+      display: inline-block;
+      font-size: 0 !important;
+    }
+
+    img.ic_cnn_small[alt="female speechwriter"] {
+      width: 40px;
+      height: 37px;
+      display: inline-block;
+      font-size: 0 !important;
+    }
+    
+
+    .ic_abc-news-small{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/abc-news.svg) 50% 50% / 102px 31px no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+      background-color: transparent !important;
+    }
+
+    .ic_c-span-small{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/c-span.svg) 50% 50% / 102px 31px no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+      background-color: transparent !important;
+    }
+
+    .ic_fox-news-small{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/fox-news.svg) 50% 50% / 45px 31px no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+      background-color: transparent !important;
+    }
+
+
+    .ic_video-small{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-video.svg) 50% 50% / 31px 34px no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+      background-color: transparent !important;
+    }
+
+    .ic_cnn_small{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/cnn.svg) 50% 50% / 35px no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+      background-color: transparent !important;
+    }
+    .amazon{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/amazon.svg) 50% 50% no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+      background-color: transparent !important;
+    }
+
+    .itunes{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/itunes.svg) 50% 50% no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+      background-color: transparent !important;
+    }
+
+    .netflix{
+      background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/netflix.svg) 50% 50% no-repeat;
+      -webkit-filter: grayscale(100%) brightness(5);
+      filter: grayscale(100%) brightness(2);
+      background-color: transparent !important;
+    }
+
+    img.itunes[alt="Female Conservative"] {
+      width: 100%;
+      height: 101px;
+      display: inline-block;
+      font-size: 0 !important;
+    }
+
+    img.amazon[alt="Female speechwritter"] {
+      width: 100%;
+      height: 101px;
+      display: inline-block;
+      font-size: 0 !important;
+    }
+
+    img.netflix[alt="Female Republican"] {
+      width: 100%;
+      height: 101px;
+      display: inline-block;
+      font-size: 0 !important;
+    }
+}
+
+
+
+
+.ic_video:hover, .ic_audio:hover, .ic_article:hover{
+    background-color: #56C6F2;
+    -moz-transition: fill 300ms ease-in;
+    -webkit-transition: fill 300ms ease-in;
+    transition: fill 300ms ease-in;
+}
+
+
+.ic_npr:hover, .ic_real-clear-politics:hover, .ic_abc-news:hover, .ic_fox-news:hover, .ic_envision:hover, .ic_cnn:hover, 
+.ic_abc-news:hover, .ic_c-span:hover, .ic_us-news:hover{
+    background-color: rgba(79, 228, 255, 1);
+    -moz-transition: fill 300ms ease-in;
+    -webkit-transition: fill 300ms ease-in;
+    transition: fill 300ms ease-in;
+}
+
+.ic_small{
+    width: 100%;
+    overflow: hidden;
+}
+.ic_abc-news-small{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/abc-news.svg) 50% 50% / 102px 31px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/abc-news.svg) 50% 50% / 102px 31px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/abc-news.svg) 50% 50% / 102px 31px no-repeat;
+  background-color: #636466;
+  height: 31px;
+  width: 102px;
+  float: left;
+}
+
+.ic_c-span-small{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/c-span.svg) 50% 50% / 102px 31px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/c-span.svg) 50% 50% / 102px 31px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/c-span.svg) 50% 50% / 102px 31px no-repeat;
+  background-color: #636466;
+  height: 31px;
+  width: 102px;
+  float: left;
+  margin-left: 2px;
+}
+
+.ic_fox-news-small{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/fox-news.svg) 50% 50% / 45px 31px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/fox-news.svg) 50% 50% / 45px 31px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/fox-news.svg) 50% 50% / 45px 31px no-repeat;
+  background-color: #636466;
+  height: 31px;
+  width: 45px;
+  float: left;
+  margin-left: 1px;
+}
+
+
+.ic_video-small{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-video.svg) 50% 50% / 31px 34px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-video.svg) 50% 50% / 31px 34px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/speechwriter-video.svg) 50% 50% / 31px 34px no-repeat;
+  background-color: #636466;
+  height: 31px;
+  width: 34px;
+  float: left;
+}
+
+.ic_cnn_small{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/cnn.svg) 50% 50% / 35px no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/cnn.svg) 50% 50% / 35px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/cnn.svg) 50% 50% / 35px no-repeat;
+  background-color: #636466;
+  height: 23px;
+  width: 37px;
+  margin-top: -4px;
+}
+.amazon{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/amazon.svg) 50% 50% no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/amazon.svg) 50% 50% o-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/amazon.svg) 50% 50% no-repeat;
+  background-color: #636466;
+  height: 101px;
+  width: 226px;
+  margin: 0 auto;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+
+.itunes{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/itunes.svg) 50% 50% no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/itunes.svg) 50% 50% no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/itunes.svg) 50% 50%  no-repeat;
+  background-color: #636466;
+  height: 101px;
+  width: 226px;
+  margin: 0 auto;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+
+.netflix{
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/netflix.svg) 50% 50% no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/netflix.svg) 50% 50% no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/netflix.svg) 50% 50% no-repeat;
+  background-color: #636466;
+  height: 101px;
+  width: 226px;
+  margin: 0 auto;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+.ic_cnn_small:hover{
+  background-color: #CB0000;
+}
+
+@media (max-width: 768px){
+    .ic_cnn{
+      -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/cnn.svg) 50% / 80px no-repeat;
+      -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/cnn.svg) 50% / 80px no-repeat;
+      -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/cnn.svg) 50% / 80px no-repeat;
+    }
+
+    .ic_fox-news{
+      -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/fox-news.svg) 50% 50% / 80px no-repeat;
+      -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/fox-news.svg) 50% 50% / 80px no-repeat;
+      -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/fox-news.svg) 50% 50% / 80px no-repeat;
+    }
+
+    .ic_c-span{
+      -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/c-span.svg) 50% 50% / 100px no-repeat;
+      -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/c-span.svg) 50% 50% / 100px no-repeat;
+      -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/c-span.svg) 50% 50% / 100px no-repeat;
+    }
+
+    .ic_us-news{
+      -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/us-news.svg) 50% 50% / 100px  no-repeat;
+      -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/us-news.svg) 50% 50% / 100px no-repeat;
+      -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/us-news.svg) 50% 50% / 100px no-repeat;
+    }
+
+    .ic_abc-news{
+      -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/abc-news.svg) 50% 50% / 100px no-repeat;
+      -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/abc-news.svg) 50% 50% / 100px no-repeat;
+      -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/abc-news.svg) 50% 50% / 100px no-repeat;
+    }
+
+    .ic_npr{
+      -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/npr.svg) 50% 50% / 100px no-repeat;
+      -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/npr.svg) 50% 50% / 100px no-repeat;
+      -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/npr.svg) 50% 50% / 100px no-repeat;
+    }
+
+    .ic_envision{
+      -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/envision.svg) 50% 50% / 100px no-repeat;
+      -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/envision.svg) 50% 50% / 100px no-repeat;
+      -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/envision.svg) 50% 50% / 100px no-repeat;
+    }
+
+    .ic_real-clear-politics{
+      -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/real-clear-politics.svg) 50% 50% / 100px no-repeat;
+      -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/real-clear-politics.svg) 50% 50% / 100px no-repeat;
+      -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/icons/media/real-clear-politics.svg) 50% 50% / 100px no-repeat;
+    }
+    .amazon{
+      -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/amazon.svg) 50% 50% / 190px no-repeat;
+      -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/amazon.svg) 50% 50% / 190px no-repeat;
+      -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/amazon.svg) 50% 50% / 190px no-repeat;
+      width: 190px;
+    }
+
+    .itunes{
+      -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/itunes.svg) 50% 50% / 190px no-repeat;
+      -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/itunes.svg) 50% 50% / 190px no-repeat;
+      -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/itunes.svg) 50% 50% / 190px  no-repeat;
+      width: 190px;
+    }
+
+    .netflix{
+      -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/netflix.svg) 50% 50% / 190px no-repeat;
+      -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/netflix.svg) 50% 50% / 190px no-repeat;
+      -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/netflix.svg) 50% 50% / 190px no-repeat;
+      width: 190px;
+    }
+}
+
+/*end media icons*/
+.inner {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    min-height: 50px;
+    padding:30px 0;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    z-index: 99;
+}
+
+.innerz {
+    width: 100%;
+    padding:0 5%;
+    z-index: 99;
+    overflow-x:hidden 
+}
+
+.inner:after {
+      content: "";
+      display: table;
+      clear: both;
+}
+
+.inner h1.title{
+    font-family: 'Roboto Slab', serif;
+    -webkit-transform: translate3d(0,0,0);
+    font-size: 48px;
+    letter-spacing: .05em;
+    color: #444;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.inner h2.subtitle{
+    font-family: 'Roboto Slab', serif;
+    -webkit-transform: translate3d(0,0,0);
+    font-size: 22px;
+    letter-spacing: .01em;
+    color: #111;
+    line-height: 1em;
+    text-transform: none;
+}
+
+/*41on41 page*/
+
+.video-wrapper {
+  position: absolute;
+  top: 40px; left: 0; right: 0; bottom: 0;
+  height: 100% !important;
+  width: 100% !important;
+  background-size:cover;
+  overflow: hidden;
+  white-space: nowrap;
+  clear: both;
+}
+
+
+.bottom-video{
+    position:absolute;
+    top: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.video-content{
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: 999;
+  overflow: hidden;
+}
+
+@media(min-width: 991px){
+    .borderright{
+        border-right: 2px solid #636466;
+        padding-right: 32px
+    }
+    .paddingleft{
+    padding-left: 34px
+    }
+}
+
+@media(max-width: 991px){
+    .dvd-div{
+        padding: 28px;
+    }
+    .borderright{
+        border-bottom: 2px solid #636466;
+        border-right: none;
+        padding: 28px;
+        margin-bottom: 28px;
+    }
+    .borderright p.leads{
+        text-align: left;
+    }
+    .paddingleft{
+    padding-bottom: 20px
+    }
+    .paddingleft p.leads{
+        text-align: left;
+    }
+}
+
+@media(max-width: 768px){
+    .borderright{
+        padding: 0 0 28px 0;
+        margin: 0 15px 28px;
+    }
+}
+
+.fourtyOnelogo{
+        margin-bottom: 10px;
+        width: 40%
+}
+
+img.cnn {
+  margin-top: -1px;
+  width: 35px;
+  height: 23px;
+  /*to get the greyscale work on Firefox we need the following ulr line not -moz-filter*/
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); 
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -ms-filter:     grayscale(100%);
+  -o-filter:      grayscale(100%);
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+
+img.cnn:hover {
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter:    none;
+  -ms-filter:     none;
+  -o-filter:      none;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+
+.center-block {
+  text-align: center;
+}
+
+.bloqstyle {
+  font: 14px/20px italic Times, serif;
+  padding: 8px 0;
+  margin: 5px;
+  vertical-align: bottom;
+  text-indent: 23px;
+  font-size: 50px;
+  font-family: serif;
+  }
+
+.btn{
+    border-radius: 0;
+    padding: 10px 19px;
+    margin-top: 12px
+}
+.btn-danger{
+    background-color: #be1e2d;
+    border-color: #be1e2d;
+}
+
+.pdfload
+{
+    display:table;
+}
+
+.pdfload img
+{
+    padding-right: 12px;
+    width: 70%;
+}
+
+.leadspan
+{
+    vertical-align: middle;
+    display: table-cell;
+}   
+
+h2.section-title {
+    margin-bottom: 30px;
+    font-size:30px;
+    letter-spacing: .2em;
+    overflow: hidden;
+    font-family: 'Vollkorn', serif;
+    padding-left: 0;
+    text-align: center;
+    color: #636466;
+}
+
+.leader-on .content-section-a{
+    padding: 0;
+}
+
+.leader-on h2.section-title {
+    margin-bottom: 20px;
+    font-size:30px;
+    letter-spacing: .2em;
+    overflow: hidden;
+    font-family: 'Vollkorn', serif;
+    padding-left: 0;
+    text-align: center;
+    color: #636466;
+    text-transform: uppercase;
+}
+.leader-on p {
+    font-size: 14px;
+    text-align: left;
+    margin: 20px 0 10px;
+}
+
+.leader-on p.leadz {
+    font-size: 14px;
+    text-align: left;
+    margin: 10px -15px 0;
+}
+@media (max-width: 768px){
+    .leader-on div.container {
+        margin: 0 13px;
+    }
+}
+
+.contact-leader{
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-leader h2.section-title {
+    margin-bottom: 20px;
+    font-size:30px;
+    letter-spacing: .2em;
+    overflow: hidden;
+    font-family: 'Vollkorn', serif;
+    padding-left: 0;
+    text-align: center;
+    color: #636466;
+    text-transform: uppercase;
+}
+
+.contact-leader button{
+    margin: 10px 0 0;
+}
+@media (max-width: 1199px){
+    .contact-leader{
+        padding: 0;
+        text-align: center;
+        z-index: 9;
+    }
+    .contact-leader h2.section-title {
+        margin-bottom: -30px;
+    }
+    .contact-lead img{
+        margin: -22px 0 22px;
+    }
+}
+
+@media (min-width: 1200px){
+    .pro-leader {
+    }
+    .pro-leader img{
+        margin-top: -40px
+    }
+}
+
+@-moz-document url-prefix() {
+  .pro-leader img{
+        margin-top: 0
+    }
+}
+
+@media (max-width: 1199px){
+    .pro-leader {
+    }
+    .pro-leader img{
+        margin-top: -20px
+    }
+}
+
+
+@media (max-width: 991px){
+    .pro-leader {
+        display: none;
+    }
+}
+
+.mobile-leader {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: -40px;
+    z-index: 1;
+}
+@media(min-width: 991px){
+    .mobile-leader{
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    .contact-lead{
+        padding-bottom: 20px;
+    }
+}
+
+.coming-soon{
+    margin: 60px auto 80px;
+    text-align: center;
+}
+
+.coming-soon h2.section-title {
+    margin-bottom: 40px;
+    font-size:30px;
+    letter-spacing: .2em;
+    overflow: hidden;
+    font-family: 'Vollkorn', serif;
+    padding-left: 0;
+    text-align: center;
+    color: #636466;
+}
+
+@media (max-width: 991px){
+    .coming-soon{
+        margin: 0 auto 0;
+        text-align: center;
+    }
+    .coming-soon h2.section-title {
+        margin-bottom: 19px;
+        font-size:28px;
+        letter-spacing: .2em;
+        overflow: hidden;
+        font-family: 'Vollkorn', serif;
+        padding-left: 0;
+        text-align: center;
+        color: #636466;
+    }
+    .coming-soon .verticalAlign{
+        position: relative;
+        text-align: center;
+    }
+
+    .coming-soon .verticalAlign a div{
+        position: inherit;  
+        top: 0;  
+        bottom: 0;  
+        left: 0;  
+        right: 0;  
+        margin: auto;
+    }
+    
+}
+
+/*End 41on41 page*/
+
+
+
+
+    .verticalAlign{
+        position: relative;
+    }
+
+    .verticalAlign a div{
+        position: absolute;  
+        top: 0;  
+        bottom: 0;  
+        left: 0;  
+        right: 0;  
+        margin: auto;
+    }
+    
+.espace{
+  height: 40px;
+  width: 100%;
+}
+@media (min-width: 768px){
+    .space {
+    height: 99px;
+    text-align: center;
+    color: #f8f8f8;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: -99;
+    }
+
+    .padtop{
+        position: relative;
+    }
+
+    .padtop img{
+        position: absolute;  
+        top: 0;  
+        bottom: 0;  
+        left: 0;  
+        right: 0;  
+        margin: auto;
+    }
+}
+
+@media (max-width: 991px){
+    .pspace {
+    height: 99px;
+    text-align: center;
+    color: #f8f8f8;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: -99;
+    }
+}
+
+@media (min-width: 991px){
+    .spacex {
+    height: 99px;
+    text-align: center;
+    color: #f8f8f8;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: -99;
+    }
+}
+
+.negpadtop{
+    margin-top: 40px;
+}
+@media (max-width: 768px){
+.header-front {
+        padding-top: -30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+        text-align: center;
+        background-size: cover;
+        overflow: hidden;
+        z-index: -99;
+    }
+}
+/*start contactPage*/
+
+.header-contact {
+    padding-top: -30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    text-align: center;
+    color: #636466;
+    background: url(../img/backgrounds/mary-kate-cary-footer-background.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -99;
+}
+
+.intro-contact {
+    padding: 50px 0 70px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    text-align: center;
+    color: #636466;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -99;
+}
+
+.pro-portrait {
+    margin-bottom: -80px;
+    margin-top: 0;
+    text-align: center;
+    bottom: 0 !important;
+}
+
+.reussi{
+    color: white;
+}
+
+.fail{
+    color: #C1D2C1;
+}
+
+@media(max-width: 1200px){
+    .pro-portrait{
+        display: none;
+    }
+}
+
+.intro-contact p{
+    text-align: left;
+}
+.contactForm{
+    margin: 70px 0;
+}
+
+.form-control{
+    border-radius: 0;
+    background-color: #F2F3F4;
+}
+
+@-moz-document url-prefix() {
+    .form-group label{
+      float: none !important;     
+    }
+
+    .form-group{
+      text-align: left !important;
+    }
+}
+
+.form-group label{
+    float: left;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'RobotoSlab', sans-serif;
+}
+
+.form-group button{
+    float: left;
+    padding: 12px 50px;
+    margin: 13px;
+}
+
+.contact-pad{
+    padding: 70px 40px 70px 0;
+    text-align: center;
+}
+
+.contact-pad h2{
+    margin-bottom: 40px;
+    font-size:30px;
+    letter-spacing: .2em;
+    overflow: hidden;
+    font-family: 'Vollkorn', serif;
+    padding-left: 0;
+    text-align: center;
+    color: #636466;
+}
+
+.iframe-video-contact{
+    padding: 0 35px 0;
+    text-align: center;
+}
+@media (max-width: 768px){
+    .iframe-video-contact{
+        padding: 0 13px 0;
+        text-align: center;
+        margin-top: -70px;
+    }
+}
+.lead{
+    text-align: left;
+}
+.plead{
+    font-size: 14px;
+    text-align: left;
+}
+.plead a{
+    color: #56C6F2;
+    text-decoration: underline; 
+}
+.plead a:hover{
+    color: #56C6F2;
+}
+.whitep{
+    font-size: 16px;
+    color: white;
+}
+
+/*End contactPage*/
+
+/*start Blog*/
+
+.item{
+    margin-top: 2px
+}
+
+.item .content-section-a, .item .content-section-b{
+    padding: 19px 0;
+}
+
+.item h2{
+    font-family: 'Vollkorn', serif;
+    font-size: 28px;
+    letter-spacing: .01em;
+    color: #111;
+    line-height: 1em;
+    text-transform: none;
+    padding: 0 !important;
+    margin-top: 0;
+}
+
+.item-text{
+    display: table; 
+    overflow: hidden;
+    height: 200px;
+}
+
+.item-text-in{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.blog-pagination{
+    overflow: hidden;
+    clear: both;
+    margin: 15px;
+    float: none;
+    text-align: center;
+}
+
+.item h2 a{
+    text-decoration: none;
+}
+
+.item h2 a:hover{
+    color: #56C6F2;
+}
+
+.section-color-a{
+    background-color: #fcf9f9;
+    padding: 19px 4px;
+}
+
+.section-color-b{
+    background-color: #fff;
+    padding: 19px 4px;
+}
+@media (max-width: 768px){
+    .item img{
+    }
+    .item {
+        text-align: center;
+    }
+}
+/*End Blog*/
+/*start Single post*/
+
+.post{
+    margin: 40px auto;
+    font-family: 'Roboto Slab', serif;
+    padding-top:12px; 
+}
+
+.post h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 28px;
+    letter-spacing: .01em;
+    color: #111;
+    line-height: 1em;
+    text-transform: none;
+    margin-left: -.4em;
+}
+
+.post .datebloc{
+    font-family: 'Roboto Slab', serif;
+    overflow: hidden;
+    width: 100%;
+    margin: 40px auto;
+    color: #999;
+    font-size: 14px;
+    margin: 0;
+}
+
+.post .excerpt p{
+    font-family: 'Roboto Slab', serif;
+    overflow: hidden;
+    width: 100%;
+    margin: 40px auto;
+    color: #999;
+    font-size: 12px;
+    margin: -20px 0 0;
+}
+
+.post p {
+    font-size: 19px;
+    font-family: 'Roboto Slab', serif;
+    -webkit-transform: translate3d(0,0,0);
+    letter-spacing: .04em;
+    color: #111;
+    line-height: 1.5em;
+    text-transform: none;
+    margin: 28px auto 28px;
+    text-align: left;
+}
+.post img{
+    margin: 19px auto 5px;
+}
+
+@media(min-width: 768px){
+    .separatorPost {
+        height: 90px;
+        text-align: center;
+        color: #f8f8f8;
+        background-color: #f1f1f1;
+        overflow: hidden;
+        z-index: -99;
+    }
+}
+
+/*End Single post*/
+
+
+.leadconnect{
+  text-transform: uppercase;
+  color: white;
+  margin-top: 10px;
+  font-family: 'Vollkorn', serif;
+  font-size: 19px;
+  letter-spacing: .1em;
+}
+
+.img-forced{
+    width: 68px;
+    height: 32px;
+}
+/*Wordpress style*/
+
+
+/**
+ * 5.7 Post/Paging Navigation
+ * ----------------------------------------------------------------------------
+ */
+
+.navigation .nav-previous {
+    float: left;
+}
+
+.navigation .nav-next {
+    float: right;
+
+}
+
+.entry-data{
+    display: none;
+}
+
+/*Change Menu Links color*/
+.navigation a {
+    color: #fff;
+    margin-top: 40px;
+    font-family: arial;
+    font-family: 17px;
+    font-weight: 70;
+}
+
+.navigation a:hover {
+    color: #fff;
+    text-transform: none;
+}
+
+.paging-navigation {
+    background-color: #e8e5ce;
+    padding: 40px 0;
+}
+
+.paging-navigation .nav-links {
+    margin: 0 auto;
+    max-width: 604px;
+    width: 100%;
+}
+
+.sidebar .paging-navigation .nav-links {
+    max-width: 1040px;
+    padding: 0 376px 0 60px;
+}
+
+.paging-navigation .nav-next {
+    padding: -40px 0;
+}
+
+.paging-navigation a {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.paging-navigation .meta-nav {
+    background-color: #e63f2a;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 26px;
+    padding: 3px 0 8px;
+    text-align: center;
+    width: 50px;
+}
+.post-navigation a[rel="prev"] {
+    float: right;
+    text-align: right;
+    color: #233746;
+    font-style: normal;
+    font-size: 17px;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+.post-navigation a:hover[rel="prev"] {
+    float: right;
+    text-align: right;
+    color: #2174BB;
+    font-style: normal;
+    font-size: 17px;
+    text-decoration: none;
+    -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+.paging-navigation .nav-previous .meta-nav {
+    margin-right: 10px;
+    padding: 17px 0 23px;
+    width: 80px;
+}
+.meta-nav{
+    display: none;
+}
+.paging-navigation .nav-next .meta-nav {
+    margin-left: 10px;
+}
+
+.paging-navigation a:hover .meta-nav {
+    background-color: #2174BB;
+    text-decoration: none;
+    -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.post-navigation {
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    padding: 20px 0;
+}
+
+.post-navigation .nav-links {
+    margin: 7px auto 90px auto;
+    max-width: 100%;
+}
+
+.sidebar .post-navigation .nav-links {
+    padding: 0 376px 0 60px;
+}
+
+.post-navigation a[rel="next"] {
+    float: left;
+    text-align: right;
+    margin-top: 0px;
+    color: #233746;
+    font-style: normal;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.post-navigation a:hover[rel="next"] {
+    float: left;
+    text-align: left;
+    margin-top: 0px;
+    color: #2174BB;
+    font-style: normal;
+    font-size: 17px;
+    text-decoration: none;
+    -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+/**
+ * 5.8 Author Bio
+ * ----------------------------------------------------------------------------
+ */
+
+.author-info {
+    margin: 0 auto;
+    max-width: 604px;
+    padding: 30px 0 10px;
+    text-align: left; /* gallery & video post formats */
+    width: 100%;
+}
+
+.author.sidebar .author-info {
+    max-width: 1040px;
+    padding: 30px 376px 10px 60px;
+}
+
+.single .author-info {
+    padding: 50px 0 0;
+}
+
+.author-avatar .avatar {
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+.single-format-status .author-description {
+    color: #f7f5e7;
+}
+
+.author-description .author-title {
+    clear: none;
+    font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
+    margin: 0 0 8px;
+}
+
+.author-link {
+    color: #ddd;
+    margin-left: 2px;
+}
+
+.author.archive .author-link {
+    display: none;
+}
+
+
+/**
+ * 5.9 Archives
+ * ----------------------------------------------------------------------------
+ */
+
+.archive-header {
+    background-color: #e8e5ce;
+}
+
+.archive-title,
+.archive-meta {
+    font: 300 italic 30px "Source Sans Pro", Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 1040px;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.archive-meta {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: -15px;
+    padding: 0 0 11px;
+}
+
+.sidebar .archive-meta {
+    padding-right: 316px;
+}
+
+
+/**
+ * 5.10 Search Results/No posts
+ * ----------------------------------------------------------------------------
+ */
+
+.page-header {
+    background-color: #e8e5ce;
+}
+
+.page-title {
+    font: 300 italic 30px "Source Sans Pro", Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 1040px;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.page-content {
+    margin: 0 auto;
+    max-width: 604px;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.sidebar .page-content {
+    margin: 0 auto;
+    max-width: 1040px;
+    padding: 40px 376px 40px 60px;
+}
+
+
+/**
+ * 5.11 404
+ * ----------------------------------------------------------------------------
+ */
+
+.error404 .page-header {
+    background-color: #fff;
+}
+
+.error404 .page-title {
+    line-height: 0.6;
+    margin: 0;
+    padding: 300px;
+    position: relative;
+    text-align: center;
+    width: auto;
+}
+
+.error404 .page-title:before {
+    color: #e8e5ce;
+    content: "\f423";
+    font-size: 964px;
+    line-height: 0.6;
+    overflow: hidden;
+    position: absolute;
+    left: 7px;
+    top: 28px;
+}
+
+.error404 .page-wrapper {
+    background-color: #e8e5ce;
+}
+
+.error404 .page-header,
+.error404 .page-content {
+    margin: 0 auto;
+    max-width: 1040px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+
+/**
+ * 5.12 Comments
+ * ----------------------------------------------------------------------------
+ */
+
+.comments-title,
+.comment-list,
+.comment-reply-title,
+.must-log-in,
+.comment-respond .comment-form,
+.comment-respond iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 604px;
+    width: 100%;
+}
+
+.sidebar .comments-title,
+.sidebar .comment-list,
+.sidebar .must-log-in,
+.sidebar .comment-reply-title,
+.sidebar .comment-navigation,
+.sidebar .comment-respond .comment-form {
+    max-width: 1040px;
+    padding-left: 60px;
+    padding-right: 376px;
+}
+
+.comments-title {
+    font: 300 italic 28px "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.comment-list,
+.comment-list .children {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comment-list .children {
+    margin-left: 20px;
+}
+
+.comment-list > li:after,
+.comment-list .children > li:before {
+    background: url(images/dotted-line.png) repeat left top;
+    background-size: 4px 4px;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+
+.comment-list > li:last-child:after {
+    display: none;
+}
+
+.comment-body {
+    padding: 24px 0;
+    position: relative;
+}
+
+.comment-author {
+    float: left;
+    max-width: 74px;
+}
+
+.comment-author .avatar {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.comment-author .fn {
+    word-wrap: break-word;
+}
+
+.comment-author .fn,
+.comment-author .url,
+.comment-reply-link,
+.comment-reply-login {
+    color: #bc360a;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.says {
+    display: none;
+}
+
+.no-avatars .comment-author {
+    margin: 0 0 5px;
+    max-width: 100%;
+    position: relative;
+}
+
+.no-avatars .comment-metadata,
+.no-avatars .comment-content,
+.no-avatars .comment-list .reply {
+    width: 100%;
+}
+
+.bypostauthor > .comment-body .fn:before {
+    content: "\f408";
+    vertical-align: text-top;
+}
+
+.comment-list .edit-link {
+    margin-left: 20px;
+}
+
+.comment-metadata,
+.comment-awaiting-moderation,
+.comment-content,
+.comment-list .reply {
+    float: right;
+    width: 79%;
+    width: -webkit-calc(100% - 124px);
+    width:         calc(100% - 124px);
+    word-wrap: break-word;
+}
+
+.comment-meta,
+.comment-meta a {
+    color: #a2a2a2;
+    font-size: 13px;
+}
+
+.comment-meta a:hover {
+    color: #ea9629;
+}
+
+.comment-metadata {
+    margin-bottom: 20px;
+}
+
+.ping-meta {
+    color: #a2a2a2;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.comment-awaiting-moderation {
+    color: #a2a2a2;
+}
+
+.comment-awaiting-moderation:before {
+    content: "\f414";
+    margin-right: 5px;
+    position: relative;
+    top: -2px;
+}
+
+.comment-reply-link:before,
+.comment-reply-login:before {
+    content: "\f412";
+    margin-right: 3px;
+}
+
+/* Comment form */
+.comment-respond {
+    background-color: #f7f5e7;
+    padding: 30px 0;
+}
+
+.comment .comment-respond {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.comment-reply-title {
+    font: 300 italic 28px "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.comment-reply-title small a {
+    color: #131310;
+    display: inline-block;
+    float: right;
+    height: 16px;
+    overflow: hidden;
+    width: 16px;
+}
+
+.comment-reply-title small a:hover {
+    color: #ed331c;
+    text-decoration: none;
+}
+
+.comment-reply-title small a:before {
+    content: "\f406";
+    vertical-align: top;
+}
+
+.sidebar .comment-list .comment-reply-title,
+.sidebar .comment-list .comment-respond .comment-form {
+    padding: 0;
+}
+
+.comment-form .comment-notes {
+    margin-bottom: 15px;
+}
+
+.comment-form .comment-form-author,
+.comment-form .comment-form-email,
+.comment-form .comment-form-url {
+    margin-bottom: 8px;
+}
+
+.comment-form [for="author"],
+.comment-form [for="email"],
+.comment-form [for="url"],
+.comment-form [for="comment"] {
+    float: left;
+    padding: 5px 0;
+    width: 120px;
+}
+
+.comment-form .required {
+    color: #ed331c;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"] {
+    max-width: 270px;
+    width: 60%;
+}
+
+.comment-form textarea {
+    width: 100%;
+}
+
+.form-allowed-tags,
+.form-allowed-tags code {
+    color: #686758;
+    font-size: 12px;
+}
+
+.form-allowed-tags code {
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+.comment-list .pingback,
+.comment-list .trackback {
+    padding-top: 24px;
+}
+
+.comment-navigation {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0 auto;
+    max-width: 604px;
+    padding: 20px 0 30px;
+    width: 100%;
+}
+
+.no-comments {
+    background-color: #f7f5e7;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.sidebar .no-comments {
+    padding-left: 60px;
+    padding-right: 376px;
+}
+
+@media (min-width: 768px){
+  .break{
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+  .break{
+  }
+}
+/*Start Testimonials*/
+
+#testimonials {
+margin:10px 28px; 
+overflow: hidden;
+}
+#testimonials blockquote{
+padding:10px;
+width:100% !important;
+ font-family: 'Vollkorn', serif;
+font-style:italic;
+color:#808080;
+display:block;
+background-color: #E5E5E5;
+}
+ 
+#testimonials blockquote p{
+    margin: 0 !important;
+    padding: 5px!important;
+    font-size: 28px;
+}
+#testimonials blockquote cite {
+font-style: normal;
+display: block;
+text-transform: none;
+font-style:normal;
+color: #636466;
+padding-left:5px;
+margin-top:10px;
+font-size: 16px;
+}
+/*End Testimonials*/
+
+div[style="clear:both;width:100%;text-align:center; font-size:11px; "]{
+  display: none;
+}
+
+
+
+
+    
+
+
+
+
+

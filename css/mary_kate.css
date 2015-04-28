@@ -1,0 +1,1177 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700);
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #636466;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px){
+  .homepage{
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #5C4C46;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+strong a {
+  font-weight: bold !important;
+}
+
+h1 {
+  font-family: "OfficinaSerITCStd", serif;
+  color: white;
+  font-size: 3.2em;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: "OfficinaSerITCStd", serif;
+  color: white;
+  font-size: 2.6em;
+  font-weight: normal;
+  margin: 0;
+  padding: .4em;
+}
+
+h3 {
+  font-family: "OfficinaSerITCStd", serif;
+  color: white;
+  font-size: 2.6em;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: "Adelle Sans", sans-serif;
+  color: #5C4C46;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 1rem 0;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+a img {
+  border: none;
+}
+
+ul {
+  list-style: none;
+  list-style-image: url('/static/images/bullet.png?7eb820d1b2ad');
+}
+
+.velocity-animating {
+  transition: none;
+}
+
+.red {
+  color: red;
+}
+
+.small {
+  font-size: .8em;
+}
+
+div#isMobile {
+  display: block;
+  height: 0;
+}
+
+h1.logo-color{
+  height:47px;
+  text-indent:100%;white-space:nowrap;overflow:hidden;
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/speechwriter-mary-kate-first.svg) 50% 50%  no-repeat;
+    -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/speechwriter-mary-kate-first.svg) 50% 50%  no-repeat;
+    -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/speechwriter-mary-kate-first.svg) 50% 50% no-repeat;
+
+background-color: white;
+}
+
+@-moz-document url-prefix() {
+  /*svg css for firefox*/
+    h1.logo-color{
+    height:47px;
+    text-indent:100%;white-space:nowrap;overflow:hidden;
+    background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/speechwriter-mary-kate-first.svg) no-repeat center;
+    -webkit-filter: grayscale(100%) brightness(5);
+    filter: grayscale(100%) brightness(5);
+  }
+
+
+  .logo-white{
+    background-color: transparent !important;
+    height:2em;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/speechwriter-mary-kate-first.svg) 50% 50% / 28% no-repeat;
+    -webkit-filter: grayscale(100%) brightness(5);
+    filter: grayscale(100%) brightness(5);
+  }
+}
+
+h1.logo-dark{
+  background:url('http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/conservative-logo-small.svg') no-repeat center top;
+  text-indent:100%;
+  white-space:nowrap;
+  overflow:hidden
+}
+/*
+h1.logo-whity{
+  background:url('http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/logo-white.png') no-repeat center top;
+  text-indent:100%;
+  white-space:nowrap;
+  overflow:hidden
+}
+*/
+
+.logo-white{
+  background-color: white;
+  height:2em;
+  text-indent:100%;
+  white-space:nowrap;
+  overflow:hidden;
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/speechwriter-mary-kate-first.svg) 50% 50% / 28% no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/speechwriter-mary-kate-first.svg) 50% 50% / 28% no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/speechwriter-mary-kate-first.svg) 50% 50% / 28% no-repeat;
+}
+
+@media screen and (max-width: 786px){
+  .logo-white{
+  background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/conservative-logo-small.svg) 50% 50% / 299px 43px  no-repeat;
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/conservative-logo-small.svg) 50% 50% / 299px 43px  no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/conservative-logo-small.svg) 50% 50% / 299px 43px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/conservative-logo-small.svg) 50% 50% / 299px 43px no-repeat;
+  background-color: #fff;
+  }
+  h1.logo-color{
+  background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/conservative-logo-small.svg) 50% 50% / 270px  no-repeat;
+  -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/conservative-logo-small.svg) 50% 50% / 270px  no-repeat;
+  -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/conservative-logo-small.svg) 50% 50% / 270px no-repeat;
+  -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/conservative-logo-small.svg) 50% 50% / 270px no-repeat;
+  background-color: #fff;
+  }
+  
+  h1.logo-dark{
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    background:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/conservative-mobile-top-logo.svg) 50% 50% / 250px no-repeat;
+    -webkit-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/conservative-mobile-top-logo.svg) 50% 50% / 250px no-repeat;
+    -o-mask:    url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/conservative-mobile-top-logo.svg) 50% 50% / 250px no-repeat;
+    -ms-mask:   url(http://marykatecary.com/wp-content/themes/MARYKATECARY/img/logos/conservative-mobile-top-logo.svg) 50% 50% / 250px no-repeat;
+    background-color: #636466;
+}
+}
+
+#nav-linkedin svg path {
+  fill: #979797;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+
+#nav-linkedin:hover path {
+  fill: #56C6F2 !important;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+
+#nav-linkedin::after {
+  height: 0 !important;
+}
+
+#nav-linkedin img {
+  width: 1.3em;
+  height: 1.3em;
+  /*to get the greyscale work on Firefox we need the following ulr line not -moz-filter*/
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); 
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -ms-filter:     grayscale(100%);
+  -o-filter:      grayscale(100%);
+}
+
+#nav-linkedin img:hover {
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter:    none;
+  -ms-filter:     none;
+  -o-filter:      none;
+}
+
+#nav-twitter::after {
+  height: 0 !important;
+}
+
+#nav-twitter img {
+  width: 1.5em;
+  height: 1.3em;
+  /*to get the greyscale work on Firefox we need the following ulr line not -moz-filter*/
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); 
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -ms-filter:     grayscale(100%);
+  -o-filter:      grayscale(100%);
+}
+
+#nav-twitter img:hover {
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter:    none;
+  -ms-filter:     none;
+  -o-filter:      none;
+}
+
+#nav-foot-socials svg path {
+  fill: #fff;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+
+#nav-foot-socials:hover path {
+  fill: #56C6F2 !important;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+
+.bgimage {
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.bgimage-container {
+  overflow: hidden;
+  position: relative;
+}
+.bgimage-container .bgimage {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.bgimage-container .bgvideo {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+
+.bgimage-container .bgimage.mobile {
+  display: block !important;
+}
+
+header.not-fullscreen {
+  width: 100%;
+  height: 3.2rem;
+  background-image: url('/static/images/default_header_mobile.jpg?f05c97375ee0');
+  background-size: 100%;
+  background-position: center top;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+@media(max-width: 768px){
+  header.not-fullscreen {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 5rem;
+  z-index: 99999;
+  padding-top: 8px
+  } 
+}
+header.not-fullscreen.journal {
+  background-image: url('/static/images/journal_header_mobile.jpg?2c0e5c9f7993');
+}
+header.not-fullscreen.contact {
+  background-image: url('/static/images/contact_header_mobile.jpg?2c0e5c9f7993');
+}
+header.not-fullscreen nav {
+  display: block;
+}
+header.not-fullscreen nav a#mobileMenuOpen {
+  margin: 7px 9px 0;
+}
+
+header.not-fullscreen nav a#nav-logo {
+  width: 100%;
+  display: block;
+  margin: -8px .1rem;
+}
+
+.section-anchor,
+.subsection-anchor {
+  display: block;
+  position: relative;
+  top: -3.1rem;
+}
+
+content#main {
+  padding: 0;
+  margin: 3rem 0 0;
+  display: block;
+}
+content#main .content-center {
+  padding: 1rem;
+}
+content#main .content-center img {
+  max-width: 100%;
+}
+
+.field {
+  padding-top: .4rem;
+  width: 100%;
+}
+.field input,
+.field textarea {
+  width: 100%;
+  max-width: 22rem;
+  padding: .3rem;
+}
+.field input[type="checkbox"],
+.field input[type="radio"] {
+  width: auto;
+}
+.field input[type="submit"] {
+  border: solid 0.15em #444;
+  border-radius: .4em;
+  padding: .2em .6em;
+  color: #444;
+  background-color: white;
+  cursor: hand;
+  width: auto;
+  font-size: 1rem;
+}
+
+div.button {
+  padding-top: 1rem;
+}
+
+.errorlist {
+  margin: .2em 0 0;
+  padding: 0;
+  color: red;
+  list-style: none;
+  font-size: .9rem;
+}
+
+section.summary {
+  display: block;
+  position: relative;
+  z-index: 99;
+  padding: 1em;
+  text-align: center;
+  background-color: #444;
+  color: white;
+  font-family: "OfficinaSerITCStd", serif;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 1.2em;
+}
+section.summary.largetext {
+  font-size: 2.2rem;
+}
+section.summary.teaser {
+  font-size: 1.7rem;
+}
+section.summary p {
+  padding: 0;
+  margin: 0;
+}
+
+article {
+  margin-top: 4rem;
+  padding-bottom: 0;
+  clear: both;
+}
+article .article-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 14rem;
+}
+article .article-inline-image img {
+  max-width: 100%;
+}
+article .article-content h4 {
+  margin: 1rem 0;
+  padding: 0;
+}
+article .article-content h5 {
+  margin: 0 0 .6rem 0;
+  padding: 0;
+}
+article .article-content p {
+  margin: 0 0 1rem;
+}
+
+nav {
+  z-index: 1000;
+  display: none;
+  width: 100%;
+}
+nav.sticky {
+  display: block;
+}
+nav ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0;
+}
+nav a#mobileMenuOpen {
+  height: 19px;
+  width: 28px;
+  float: right;
+  margin-top: 7px;
+}
+nav a#mobileMenuOpen:hover svg path {
+  fill: #444;
+}
+
+nav a#nav-logo h1 {
+  height: 40px;
+  margin: 5px 0;
+}
+
+nav a#nav-logo h1 img{
+  height: 40px;
+  width: 240px;
+}
+nav ul#fullmenu {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 4rem;
+  width: 100%;
+  max-height: 0;
+  -moz-transition: max-height 300ms ease-in;
+  -webkit-transition: max-height 300ms ease-in;
+  transition: max-height 300ms ease-in;
+  overflow: hidden;
+/*  border-bottom: solid 2px #979797;*/
+}
+nav ul#fullmenu.open {
+  max-height: 26rem;
+  -moz-transition: max-height 200ms ease-in;
+  -webkit-transition: max-height 200ms ease-in;
+  transition: max-height 200ms ease-in;
+}
+
+nav ul#fullmenu li {
+  width: 100%;
+  text-align: center;
+  padding: .2rem;
+  display: block;
+}
+
+nav ul#fullmenu li a {
+  width: 100%;
+  font-size: 17px !important;
+  font-weight: normal;
+  padding: .4rem;
+  display: block;
+}
+
+@media(min-width: 768px){
+  nav ul#fullmenu li.inMobileView{
+    display: none;  
+  }
+}
+
+@media(max-width: 768px){
+  nav ul#fullmenu li span a {
+  width: 1.3em;
+  display: inline;
+  }
+  nav ul#fullmenu li.overMobileView{
+    display: none;
+  }
+  nav ul#fullmenu li.inMobileView{
+    text-align: center;
+    margin-bottom: 7px
+  }
+  nav ul#fullmenu li a {
+  font-size: 19px !important;
+  }
+  nav ul#fullmenu li a:hover {
+  color: #56C6F2;
+  text-decoration: none;
+  }    
+}
+
+nav ul#fullmenu li a img{
+/*  width: 1.3em;
+  height: 1.3em;*/
+  display: inline;
+/*  margin-right: 12px;*/
+}
+
+
+footer{
+  text-align:center;
+  background-color:rgba(16, 65, 149, .5);
+  color:white;
+  clear:both;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+footer a:link,footer a:visited{
+  color:#fff;
+  text-decoration:none
+}
+
+footer a:hover{
+  color:#56C6F2;
+  text-decoration:none
+}
+
+
+footer>ul{
+  margin:0 auto;
+  max-width:80em;
+  padding:0;
+  list-style:none;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 17px;
+}
+
+footer>ul>li{
+  display:block;
+  vertical-align:top;
+  text-align:center
+}
+
+footer>ul>li ul{
+  list-style:none;
+  font-size:.8em;
+  padding-left:0
+}
+
+footer>ul>li ul li{
+  padding-top:.4em;
+  padding-right: 40px;
+}
+
+footer #branding{margin-top:2px}
+
+footer #copyright{
+  margin-top:40px;
+  margin-bottom:19px;
+  padding-bottom:3em;
+}
+footer #copyright div{
+  color: #56C6F2;
+  text-decoration: none;
+}
+
+footer #copyright div a{
+  color: #56C6F2;
+  text-decoration: none;
+}
+
+footer #copyright div a:hover{
+  color: #fff;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+
+@media (max-width: 786px){
+footer #copyright{
+  margin: -21px 7px;
+  text-align: center;
+  font-size: 14px;
+  }
+}
+div.button a {
+  border: solid 0.15em #444;
+  border-radius: .4em;
+  padding: .2em .6em;
+  color: #444;
+  text-decoration: none;
+}
+div.button a:hover {
+  border: solid 0.15em #56C6F2;
+  color: #56C6F2;
+}
+
+div.button a:active {
+  padding: .16em .55em;
+  font-size: .92em;
+}
+
+body.homepage div#logo {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+body.homepage div#logo h1.logo-color {
+  height: 5.6rem;
+  margin: 1.6rem;
+}
+body.homepage header#hero {
+  height: 100em;
+  background: url('/static/images/gradient-dark.png?7eb820d1b2ad') repeat-x bottom;
+  position: relative;
+  z-index: 999;
+}
+body.homepage header#hero nav {
+  -moz-transition: background-color 300ms ease-in;
+  -webkit-transition: background-color 300ms ease-in;
+  transition: background-color 300ms ease-in;
+}
+body.homepage header#hero nav.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 5rem;
+  padding-top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 1;
+  -moz-transition: background-color 300ms ease-in;
+  -webkit-transition: background-color 300ms ease-in;
+  transition: background-color 300ms ease-in;
+}
+body.homepage header#hero nav.sticky a#mobileMenuOpen {
+  margin: 12px 9px;
+}
+body.homepage header#hero nav.sticky a#nav-logo {
+  margin: 0;
+  width: 100%;
+  opacity: 1;
+  -moz-transition: opacity 300ms ease-in;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+  display: block;
+}
+body.homepage header#hero nav a#nav-logo {
+  opacity: 0;
+  -moz-transition: opacity 300ms ease-in;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+body.homepage div.tagline {
+  position: relative;
+  display: none;
+  height: 0;
+  overflow: hidden;
+}
+body.homepage div#enter {
+  position: absolute;
+  z-index: 1001;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+body.homepage div#enter a svg {
+  height: 3rem;
+  width: 3rem;
+  display: inline-block;
+}
+body.homepage div#enter a svg path {
+  fill: white;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+body.homepage div#enter a svg:hover path {
+  fill: #444 !important;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+body.homepage aside.homepage-left {
+  text-align: left;
+  padding: 0;
+}
+body.homepage aside.homepage-left a {
+  text-decoration: none;
+  padding: .2em 2.3em;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+body.homepage aside.homepage-left a:hover {
+  color: #999;
+}
+
+body.homepage aside.homepage-left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body.homepage aside.homepage-left ul li {
+  font-family: 'RobotoSlab', sans-serif;
+  padding: .4em 1em;
+  margin: .6em;
+  font-size: 15px;
+}
+body.homepage aside.homepage-left ul li a {
+  color: #636466;
+  font-size: 16px;
+  padding: .3em .5em;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+body.homepage aside.homepage-left ul li.active a{
+  text-decoration: none;
+  color: #56C6F2;
+}
+
+body.homepage aside.homepage-left ul li a:hover {
+  text-decoration: none;
+  color: #56C6F2;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+
+body.homepage aside.homepage-left ul li a img{
+  margin-top: -5px;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+
+body.homepage aside.homepage-left ul li.active a img,
+body.homepage aside.homepage-left ul li a:hover img{
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter:    none;
+  -ms-filter:     none;
+  -o-filter:      none;
+  background-color: #56C6F2;
+  -moz-transition: fill 300ms ease-in;
+  -webkit-transition: fill 300ms ease-in;
+  transition: fill 300ms ease-in;
+}
+
+
+@-moz-document url-prefix() {
+      body.homepage aside.homepage-left ul li.active a img,
+      body.homepage aside.homepage-left ul li a:hover img{
+      filter: none;
+      -webkit-filter: none;
+      -moz-filter:    none;
+      -ms-filter:     none;
+      -o-filter:      none;
+      background-color: transparent;
+      -moz-transition: fill 300ms ease-in;
+      -webkit-transition: fill 300ms ease-in;
+      transition: fill 300ms ease-in;
+    }
+}
+
+
+body.homepage section.homepage-right {
+  background-color: #F2F3F4;
+  padding: 1em;
+}
+body.homepage section.homepage-right .learn-more {
+  margin-top: 3em;
+  text-align: center;
+}
+.gm-style-cc {
+  display: none;
+}
+
+.no-bullets ul li {
+  list-style-image: none;
+}
+
+@media screen and (min-aspect-ratio: 8 / 3), screen and (max-height: 36rem) {
+  div#enter {
+    display: none;
+  }
+
+  body.homepage div#logo h1.logo-color {
+    margin-top: 0 !important;
+  }
+}
+@media screen and (min-width: 48em) {
+  div#isMobile {
+    display: none;
+  }
+
+  h2 {
+    font-size: 2.8em;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  nav {
+    display: block;
+    height: 78px;
+  }
+  nav a#mobileMenuOpen {
+    display: none;
+  }
+  nav a#nav-logo h1.logo {
+    margin: 1.7rem 1.4rem 1.3rem 2.4rem;
+    width: 382px;
+    height: auto;
+    display: inline-block;
+  }
+  nav ul#fullmenu {
+    background-color: transparent;
+    position: static;
+    width: auto;
+    max-height: none;
+    float: right;
+    padding-right: 1rem;
+    padding-top: 20px;
+    border: none;
+  }
+  nav ul#fullmenu li {
+    width: auto;
+    display: inline-block;
+    padding: .2rem .5rem;
+    vertical-align: middle;
+  }
+  nav ul#fullmenu li a:link,
+  nav ul#fullmenu li a:visited,
+  nav ul#fullmenu li a:hover,
+  nav ul#fullmenu li a:active,
+  nav ul#fullmenu li a.active {
+    position: relative;
+    display: inline-block;
+    margin: .3em .4em;
+    padding: 0;
+    width: auto;
+    font-family: 'RobotoSlab', sans-serif;
+    color: #979797;
+    font-size: 15px;
+  }
+
+  nav ul#fullmenu li a.activate::after {
+    height: 2px;
+    opacity: 1;
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+
+  nav ul#fullmenu li a.activate {
+    position: relative;
+    display: inline-block;
+    margin: .3em .4em;
+    padding: 0;
+    width: auto;
+    font-family: 'RobotoSlab', sans-serif;
+    color: #979797;
+    font-size: 15px;
+  }
+
+
+  nav ul#fullmenu li a:hover,
+  nav ul#fullmenu li a:focus {
+    text-decoration: none;
+  }
+  nav ul#fullmenu li a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #56C6F2;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  nav ul#fullmenu li a:hover::after,
+  nav ul#fullmenu li a:focus::after,
+  nav ul#fullmenu li a.active::after {
+    height: 2px;
+    opacity: 1;
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+
+  footer {
+    font-size: .9em;
+  }
+  footer > ul > li {
+    padding: .8em;
+    display: inline-block;
+    text-align: left;
+  }
+  footer > ul > li ul li {
+    max-width: 14em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .section-bgimage {
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .section-bgimage .bgimage {
+    display: block;
+  }
+
+  .bgimage section.summary,
+  .bgimage-container section.summary {
+    opacity: .9;
+  }
+
+  header.not-fullscreen {
+    /*background-image: url('../img/mary-kate-cary-background.png');*/
+    height: 78px;
+/*    border-bottom: solid 3px #f8f8f8;*/
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 99999;
+  }
+  header.not-fullscreen.journal {
+    background-image: url('/static/images/journal_header.jpg?2c0e5c9f7993');
+  }
+  header.not-fullscreen.contact {
+    background-image: url('/static/images/contact_header.jpg?2c0e5c9f7993');
+  }
+  header.not-fullscreen nav a#nav-logo {
+    padding: 0;
+    float: left;
+    width: auto;
+    margin: 0;
+  }
+  header.not-fullscreen nav a#nav-logo h1 {
+    height: 1.3em;
+  }
+  header.not-fullscreen nav ul#fullmenu {
+    background-color: transparent;
+  }
+  header.not-fullscreen nav ul#fullmenu li a {
+    /*color: #7F716B;*/
+    color: #979797;
+    font-size: 17px !important;
+  }
+  header.not-fullscreen nav ul#fullmenu li:focus {
+    /*color: #7F716B;*/
+    color: #ddd;
+  }
+  .section-anchor,
+  .subsection-anchor {
+    top: -76px;
+  }
+
+  content#main {
+    margin: 15rem 0 0 0;
+  }
+  content#main section.summary {
+    padding: 5rem;
+  }
+  content#main .content-center {
+    padding: 1em 4em;
+    margin: 2rem auto 4rem;
+    max-width: 70em;
+  }
+
+  article h4 {
+    margin: 0;
+  }
+  article .article-image {
+    height: 26rem;
+    width: 26rem;
+    float: left;
+    background-position: center top;
+  }
+  article .article-inline-image {
+    float: left;
+  }
+  article .article-inline-image img {
+    width: 20rem;
+  }
+  article .article-content.has-inline-image {
+    margin-left: 23rem;
+  }
+  article .article-content.has-floating-image {
+    margin-left: 28rem;
+  }
+
+  section.summary {
+    padding: 8rem;
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+  section.summary.largetext {
+    font-size: 3.4rem;
+  }
+  section.summary.teaser {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    padding: 3rem !important;
+  }
+
+  body.homepage header#hero nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  body.homepage header#hero nav.sticky {
+    height: 78px;
+  /*  border-bottom: 3px solid #979797;*/
+  }
+  body.homepage header#hero nav.sticky a#nav-logo {
+    margin: 0;
+    width: auto;
+    float: left;
+    display: inline-block;
+  }
+  body.homepage header#hero nav a#nav-logo {
+    padding: 0;
+  }
+  body.homepage header#hero div.tagline {
+    display: block;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    font-family: "OfficinaSerITCStd", serif;
+    color: white;
+    width: 100%;
+    text-align: center;
+    overflow: visible;
+  }
+  body.homepage header#hero div#enter {
+    bottom: 2rem;
+  }
+  body.homepage header#hero div#enter a svg {
+    height: 4rem;
+    width: 4rem;
+  }
+  body.homepage aside.homepage-left {
+    width: 50%;
+    float: left;
+    height: 15rem;
+    margin-top: 0;
+  }
+  body.homepage aside.homepage-left ul li {
+    margin: 1.5rem 0;
+  }
+
+  body.homepage section.homepage-right {
+    height: 25rem;
+    margin-left: 50%;
+    padding: .7rem 4rem 1rem;
+    text-align: left;
+    overflow: scroll;
+    -ms-overflow: scroll;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+  }
+  body.homepage section.homepage-right div.teaser {
+    margin-top: 0;
+  }
+}
+
+body.homepage section.homepage-right {
+    padding-top: 2rem;
+    height: 25rem;
+    text-align: left;
+    overflow: scroll;
+    -ms-overflow: scroll;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px
+}
+
+@media screen and (min-width: 48em) and (min-aspect-ratio: 8 / 3), screen and (min-width: 48em) and (max-height: 32rem) {
+  body.homepage aside.homepage-left {
+    margin-top: 2rem;
+  }
+  body.homepage section.homepage-right {
+    padding-top: 2rem;
+  }
+
+  header.not-fullscreen {
+    height: 10rem !important;
+  }
+
+  content#main {
+    margin-top: 10rem !important;
+  }
+}
+@media screen and (min-width: 64em) {
+  nav ul#fullmenu li {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  nav ul#fullmenu li a {
+    margin: .2rem 1rem;
+  }
+
+  footer {
+    font-size: 1em;
+  }
+  footer > ul > li {
+    padding: 1em;
+  }
+
+  body.homepage header#hero h1.logo-color {
+    height: 7rem;
+    margin: 2rem;
+  }
+  body.homepage header#hero div.tagline {
+    font-size: 2.2em;
+  }
+}
+
+
+.foot{
+    background: url(../img/backgrounds/mary-kate-cary-footer-background.jpg) no-repeat center center;
+    background-size: cover;
+    z-index: 99999;
+}
+
+
+
+
